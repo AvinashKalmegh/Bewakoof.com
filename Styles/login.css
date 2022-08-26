@@ -1,0 +1,87 @@
+.container {
+    border: 0px solid red;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+  }
+  .container > div {
+    border: 0px solid blue;
+    width: 50%;
+  }
+  .container > div:nth-child(1) > h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+  }
+  .container>div:nth-child(1){
+    background-color: rgb(251, 245, 237);
+  }
+  .container > div > img {
+    display: block;
+    margin-top: 60px;
+  }
+  .container > div:nth-child(2) {
+    text-align: center;
+  }
+  .container > div:nth-child(2) > p {
+    font-size: 20px;
+    color: rgb(154, 146, 146);
+    margin-top: 20px;
+  }
+  .container > div:nth-child(2) > div {
+    border: 0px solid red;
+    width: 60%;
+    margin: auto;
+    margin-top: 60px;
+  }
+  .container > div:nth-child(2) > div > input,
+  .container > div:nth-child(2) > div > button {
+    width: 100%;
+    font-size: 20px;
+    padding: 4% 0%;
+    outline: none;
+  }
+  .container > div:nth-child(2) > div > input {
+    padding-left: 20px;
+    font-weight: 700;
+  }
+  .container > div:nth-child(2) > div > button {
+    margin-top: 20px;
+    background-color: rgb(43, 148, 177);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border: 0px;
+    cursor: pointer;
+  }
+  #contact {
+    border: 0px solid blue;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  #contact > div {
+    border: 1px solid rgb(142, 139, 139);
+    height: 50px;
+    font-weight: bold;
+    color: rgb(84, 82, 82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  #contact > div:nth-child(1) {
+    grid-area: 1/1/2/3;
+  }
+  #contact > div > img {
+    width: 8%;
+    display: block;
+    margin-right: 10px;
+  }
+  .terms {
+    border: 1px solid red;
+    
+    color: rgb(158, 147, 147);
+    
+  }
