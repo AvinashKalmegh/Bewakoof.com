@@ -6,79 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Women</title>
   </head>
-  <style>
-    .container {
-      text-align: center;
-    }
-    img{
-        cursor: pointer;
-        width: 100%;
-    }
-    .cards {
-      border: 0px solid red;
-      width: 85%;
-      margin: auto;
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: repeat(9, 1fr);
-      gap: 20px;
-    }
-    .cards > div {
-      border: 0px solid blue;
-      text-align: center;
-      cursor: pointer;
-    }
-    .cards > div > img {
-      width: 100%;
-    }
-    .container h1 h3 {
-      margin-top: 20px;
-      font-family: sans-serif;
-    }
-    .popularCategories {
-      border: 0px solid red;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-    }
-    .popularCategories > div {
-      border: 0px solid black;
-      cursor: pointer;
-    }
-
-    .popularCategories > img {
-      width: 100%;
-    }
-    .DISCOUNT_PE_DISCOUNT {
-      border: 0px solid blue;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      cursor: pointer;
-    }
-    .THE_STOOPID_COLLECTION {
-      border: 0px solid blue;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      cursor: pointer;
-    }
-    img{
-        cursor: pointer;
-    }
-
-    .BEST_BARGAIN_CORNER{
-        border: 0px solid blue;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-    }
-    
-    .BEST_BARGAIN_CORNER>div>img{
-       
-    }
-  </style>
+  <link rel="stylesheet" href="./Styles/navbar.css" />
+  <link rel="stylesheet" href="./Styles/men.css">
   <body>
+    <div class="navbar"></div>
+    <div id="category"></div>
     <div class="container">
       <img
         src="https://images.bewakoof.com/uploads/grid/app/desktop-tod-strip-women-1654149139.jpg"
@@ -317,3 +249,4 @@
     </div>
   </body>
 </html>
+<script src="./Scripts/navbar.js"></script>
