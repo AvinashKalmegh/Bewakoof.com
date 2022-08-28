@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card{
+        border: 0px solid red;
+        width: 80%;
+        margin: auto;
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 20px;
+    }
+    .card>div{
+        border: 0px solid black;
+        cursor: pointer;
+    }
+    .card>div>img{
+        width: 100%;
+    }
+</style>
+<link rel="stylesheet" href="./Styles/navbar.css" />
+<body>
+    <div class="navbar"></div>
+    <div class="card">
+      
+    </div>
+</body>
+</html>
+<script src="./Scripts/navbar.js"></script>
+<script>
+    let arr = [
+        {img:"https://images.bewakoof.com/t640/monster-2-0-oversized-fit-t-shirt-538386-1661494075-1.jpg",
+    price:"400"},
+    {img:"https://images.bewakoof.com/t640/men-s-blue-konshu-graphic-printed-oversized-t-shirt-537366-1661330517-1.jpg",
+price:"300"},
+    {img:"https://images.bewakoof.com/t640/customizable-men-s-black-round-neck-t-shirt-443960-1655808173-1.jpg",
+price:"500"},
+    {img:"https://images.bewakoof.com/t640/men-s-black-fly-me-to-the-moon-graphic-printed-oversized-t-shirt-505572-1655810617-1.jpg",
+price:"350"},
+    {img:"https://images.bewakoof.com/t640/men-s-black-the-ghost-graphic-printed-oversized-fit-t-shirt-503830-1655797646-1.jpg",
+price:"550"},
+    {img:"https://images.bewakoof.com/t640/rebellious-oversized-fit-t-shirt-538388-1661490524-1.jpg",
+price:"400"},
+{img:"https://images.bewakoof.com/t640/never-mind-stripe-half-sleeve-t-shirt-white-327913-1655746881-5.jpg",
+price:"350"},
+{img:"https://images.bewakoof.com/t640/game-over-minimal-half-sleeve-t-shirt-navy-blue-305202-1655748497-1.jpg",
+price:"450"},
+{img:"https://images.bewakoof.com/t640/batman-outline-logo-full-sleeve-t-shirt-bml-black-283891-1655748205-1.jpg",
+price:"500"},
+{img:"https://images.bewakoof.com/t640/men-s-blue-busy-doing-nothing-t-shirt-287587-1655747848-4.jpg",
+price:"540"},
+{img:"https://images.bewakoof.com/t640/men-s-black-gojo-domain-oversized-fit-t-shirt-525759-1659340441-1.jpg",
+price:"399"},
+    ];
+</script>
+<script>
+    let card = document.querySelector(".card");
+    function renderDOM(data){
+         data.forEach(function(ele){
+            let div = document.createElement("div");
+            div.addEventListener("click",function(){
+                productDetail(ele);
+            })
+            let img = document.createElement("img");
+            img.setAttribute("src",ele.img);
+            let price = document.createElement("h2");
+            price.innerText = ele.price;
+
+            card.append(div);
+            div.append(img,price);
+                 })
+    }
+    renderDOM(arr);
+
+    function productDetail(ele){
+        localStorage.setItem("detail",JSON.stringify(ele));
+        window.location.href="detail.html";
+    };
+</script>

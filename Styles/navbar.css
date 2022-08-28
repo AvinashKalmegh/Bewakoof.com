@@ -3,8 +3,13 @@
         padding: 0px;
         box-sizing: border-box;
     }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+   
     .navbar{
-        border: 1px solid rgb(168, 166, 166);
+        border-bottom: 1px solid rgb(168, 166, 166);
         width: 100%;
         height: 80px;
         position: fixed;
@@ -49,10 +54,10 @@
         justify-content: space-around;
         align-items: center;
     }
-    #nav>div:nth-child(1)>img{
-        width: 25%;
+    #nav>div:nth-child(1)>a>img{
+        width: 70%;
     }
-    #nav>div:nth-child(2)>img{
+    #nav>div:nth-child(2)>img , #nav>div:nth-child(2)>img{
         width: 5%;
      }
      #nav>div>p{
@@ -71,6 +76,11 @@
         width: 30%;
         margin-left: -40px;
     }
+    #nav>div:nth-child(2){
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     #nav>div:nth-child(2)>input{
         padding: 13px 70px 13px 10px;
         background-color: rgb(226, 235, 236);
@@ -79,13 +89,19 @@
         margin-right: 10px;
         border: 0px;
     }
-    #nav>div:nth-child(2)>img{
+    #nav>div:nth-child(2)>img, #nav>div:nth-child(2)>a>h3{
         margin-right: 10px;
         cursor: pointer;
+        color: rgb(49, 47, 47);
     }
-    #category {
-        border: 0px solid red;
+    #category{
         width: 100%;
+        background-color: white;
+        height: 60px;
+    }
+    #category>div {
+        border: 0px solid red;
+        width: 40%;
         height: 60px;
         margin: auto;
         margin-top:8px ;
@@ -93,13 +109,12 @@
         justify-content:space-evenly;
         align-items: center;
         margin-bottom: 30px;
-        background-color: white;
-      }
-      #category > h3 {
+    }
+      #category > div > a > h3 {
         cursor: pointer;
         font-family: sans-serif;
         font-weight: 100;
       }
-      #category > h3:hover {
+      #category > div > a > h3:hover {
         font-weight: bold;
       }
