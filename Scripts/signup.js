@@ -14,6 +14,7 @@ form.addEventListener("submit", function () {
     password: password,
   };
   userdetails.push(userobj);
+  console.log(userdetails);
   if (
     userobj.name == "" ||
     userobj.number == "" ||

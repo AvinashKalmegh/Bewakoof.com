@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+.footercontainer{
+    border: 0px solid black;
+    width: 100%;
+    margin-top: 40px;
+    background-color: black;
+}
+
+.footer{
+    border: 0px solid rgb(246, 14, 14);
+    width: 100%;
+    height: 370px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,90%);
+}
+.footer>div{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 55px;
+    line-height: 10px;
+}
+.footer>div:nth-child(1){
+    margin-left: 45px;
+}
+.footer>div>p:nth-child(1){
+    font-weight: 5px;
+    font-size: 18px;
+    color: gold;
+}
+
+.footer>div>p{
+    color: white;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.footer>div>div{
+    
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+.footer>div>div>img{
+    width: 15%;
+}
+
+.footer>div>div>p{
+    margin-top: 5px;
+    font-size: 17px;
+    line-height: 25px;
+}
+.footer>div>div>p:nth-child(3){
+    color: rgb(101, 100, 100);
+}
+.footer>div>div>form{
+    margin-top: 40px;
+   
+}
+.footer>div>div>form>input{
+    height: 45px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.footer>div>div>form>input[type="email"]{
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+.footer>div>div>form>input[type="submit"]{
+    margin-top: 20px;
+    height: 40px;
+    color: white;
+    background-color: rgb(223, 15, 112); 
+    border: 0px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ufooter{
+    border: 0px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.ufooter>img{
+    width:1.4%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.ufooter>button{
+    padding: 10px 40px;
+    background-color: white;
+    border: 1px solid rgb(193, 189, 189);
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+.uufooter{
+    border: 0px solid red;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.uufooter>p{
+    cursor: pointer;
+    font-size: 13px;
+}
+.uufooter>p:nth-child(6){
+    cursor: auto;
+}
+hr{
+    width: 95%;
+    margin-top: 22px;
+}
+
